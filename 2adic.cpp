@@ -7,6 +7,7 @@ int twoAdic(int n)
     {
         return 0;
     }
+    return 1+twoAdic(n/2);
 }
 
 int main()
