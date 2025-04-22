@@ -12,6 +12,10 @@ int twoAdic(int n)
 
 int main()
 {
-    //code;
+    cout << twoAdic(1) << endl;
+    cout << twoAdic(100) << endl;
+    cout << twoAdic(34) << endl;
+    cout << twoAdic(256) << endl;
+    cout << twoAdic(100032) << endl;
     return 0;
 }
