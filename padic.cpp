@@ -12,6 +12,11 @@ int pAdic(int n, int p)
 
 int main()
 {
-    //code;
+    cout << pAdic(100, 2) << endl;
+    cout << pAdic(100, 3) << endl;
+    cout << pAdic(100, 5) << endl;
+    cout << pAdic(714, 2) << endl;
+    cout << pAdic(714, 3) << endl;
+    cout << pAdic(714, 7) << endl;
     return 0;
 }
