@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int pAdic(int n)
+int pAdic(int n, int p)
 {
     if (n%p != 0)
     {
