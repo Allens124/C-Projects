@@ -7,6 +7,7 @@ int pAdic(int n, int p)
     {
         return 0;
     }
+    return 1+pAdic(n/p, p);
 }
 
 int main()
