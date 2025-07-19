@@ -5,7 +5,11 @@ template <typename T>
 
 class CircularArray
 {
-
+    private:
+        int size;
+        int front;
+        int rear;
+        T arr[100];
 };
 
 int main()
