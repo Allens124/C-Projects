@@ -88,6 +88,14 @@ class CircularArray
 
 int main()
 {
-    // code;
+    CircularArray<int> arr = CircularArray<int>();
+    arr.addFront(1);
+    arr.addRear(10);
+    arr.addRear(5);
+    arr.addFront(3);
+    while (!arr.isEmpty())
+    {
+        cout << arr.removeRear() << endl;
+    }
     return 0;
 }
