@@ -67,6 +67,7 @@ class CircularArray
             if (size == 0)
             {
                 cout << "Array is empty. Default return." << endl;
+                return arr[0];
             }
             rear--;
             if (rear == -1)
@@ -95,7 +96,8 @@ int main()
     arr.addFront(3);
     while (!arr.isEmpty())
     {
-        cout << arr.removeRear() << endl;
+        cout << arr.removeFront() << endl;
     }
+    cout << arr.removeFront() << endl;
     return 0;
 }
