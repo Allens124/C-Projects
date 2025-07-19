@@ -76,7 +76,7 @@ class CircularArray
             size--;
             return data[rear];
         }
-        int size()
+        int getSize()
         {
             return size;
         }
