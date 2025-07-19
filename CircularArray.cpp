@@ -17,6 +17,21 @@ class CircularArray
             rear = 1;
             size = 0;
         }
+        void addFront(T data)
+        {
+            if (size == 100)
+            {
+                cout << "Array is full." << endl;
+                return;
+            }
+            arr[front] = data;
+            front--;
+            if (front == -1)
+            {
+                front = 99;
+            }
+            size++;
+        }
 };
 
 int main()
