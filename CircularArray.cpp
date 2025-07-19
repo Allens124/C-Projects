@@ -32,6 +32,21 @@ class CircularArray
             }
             size++;
         }
+        void addRear(T data)
+        {
+            if (size == 100)
+            {
+                cout << "Array is full." << endl;
+                return;
+            }
+            arr[rear] = data;
+            rear++;
+            if (rear == 100)
+            {
+                rear = 0;
+            }
+            size++;
+        }
 };
 
 int main()
