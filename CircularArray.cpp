@@ -51,7 +51,7 @@ class CircularArray
         {
             if (size == 0)
             {
-                cout << "Array is empty. Default return: ";
+                cout << "Array is empty. Default return." << endl;
                 return arr[0];
             }
             front++;
@@ -61,6 +61,20 @@ class CircularArray
             }
             size--;
             return data[front];
+        }
+        T removeRear()
+        {
+            if (size == 0)
+            {
+                cout << "Array is empty. Default return." << endl;
+            }
+            rear--;
+            if (rear == -1)
+            {
+                rear = 99;
+            }
+            size--;
+            return data[rear];
         }
 };
 
