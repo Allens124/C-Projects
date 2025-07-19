@@ -60,7 +60,7 @@ class CircularArray
                 front = 0;
             }
             size--;
-            return data[front];
+            return arr[front];
         }
         T removeRear()
         {
@@ -74,7 +74,7 @@ class CircularArray
                 rear = 99;
             }
             size--;
-            return data[rear];
+            return arr[rear];
         }
         int getSize()
         {
