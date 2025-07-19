@@ -47,6 +47,21 @@ class CircularArray
             }
             size++;
         }
+        T removeFront()
+        {
+            if (size == 0)
+            {
+                cout << "Array is empty. Default return: ";
+                return arr[0];
+            }
+            front++;
+            if (front == 100)
+            {
+                front = 0;
+            }
+            size--;
+            return data[front];
+        }
 };
 
 int main()
