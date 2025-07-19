@@ -76,6 +76,10 @@ class CircularArray
             size--;
             return data[rear];
         }
+        bool isEmpty()
+        {
+            return size == 0;
+        }
 };
 
 int main()
