@@ -7,11 +7,12 @@ unsigned long long binaryExp(unsigned long long base, int exp)
     {
         return 1;
     }
+    unsigned long long x = binaryExp(base, exp/2);
     if (exp%2 == 0)
     {
-        return binaryExp(base*base, exp/2);
+        return x*x;
     }
-    return base*binaryExp(base*base, exp/2);
+    return base*x*x;
 }
 
 int main()
